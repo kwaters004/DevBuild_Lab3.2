@@ -1,0 +1,13 @@
+C:\Users\kwaters\dev\Lab3.2\Lab3.2_Review\bin\Debug\netcoreapp3.1\Lab3.2_Review.exe
+C:\Users\kwaters\dev\Lab3.2\Lab3.2_Review\bin\Debug\netcoreapp3.1\Lab3.2_Review.deps.json
+C:\Users\kwaters\dev\Lab3.2\Lab3.2_Review\bin\Debug\netcoreapp3.1\Lab3.2_Review.runtimeconfig.json
+C:\Users\kwaters\dev\Lab3.2\Lab3.2_Review\bin\Debug\netcoreapp3.1\Lab3.2_Review.runtimeconfig.dev.json
+C:\Users\kwaters\dev\Lab3.2\Lab3.2_Review\bin\Debug\netcoreapp3.1\Lab3.2_Review.dll
+C:\Users\kwaters\dev\Lab3.2\Lab3.2_Review\bin\Debug\netcoreapp3.1\Lab3.2_Review.pdb
+C:\Users\kwaters\dev\Lab3.2\Lab3.2_Review\obj\Debug\netcoreapp3.1\Lab3.2_Review.csprojAssemblyReference.cache
+C:\Users\kwaters\dev\Lab3.2\Lab3.2_Review\obj\Debug\netcoreapp3.1\Lab3.2_Review.AssemblyInfoInputs.cache
+C:\Users\kwaters\dev\Lab3.2\Lab3.2_Review\obj\Debug\netcoreapp3.1\Lab3.2_Review.AssemblyInfo.cs
+C:\Users\kwaters\dev\Lab3.2\Lab3.2_Review\obj\Debug\netcoreapp3.1\Lab3.2_Review.csproj.CoreCompileInputs.cache
+C:\Users\kwaters\dev\Lab3.2\Lab3.2_Review\obj\Debug\netcoreapp3.1\Lab3.2_Review.dll
+C:\Users\kwaters\dev\Lab3.2\Lab3.2_Review\obj\Debug\netcoreapp3.1\Lab3.2_Review.pdb
+C:\Users\kwaters\dev\Lab3.2\Lab3.2_Review\obj\Debug\netcoreapp3.1\Lab3.2_Review.genruntimeconfig.cache

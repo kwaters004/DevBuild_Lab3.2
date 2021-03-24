@@ -16,7 +16,6 @@ namespace Lab3._2
             
             Dictionary<string, decimal> items = new Dictionary<string, decimal>();
 
-
             items.Add("milk", 3.09m);
             items.Add("eggs", 1.99m);
             items.Add("chocolate milk", 4.49m);
@@ -25,6 +24,19 @@ namespace Lab3._2
             items.Add("bacon", 4.99m);
             items.Add("ground beef", 7.89m);
             items.Add("chicken", 9.34m);
+
+
+            Dictionary<string, decimal> items2 = new Dictionary<string, decimal>
+            {
+                { "milk", 3.09m},
+                {"eggs", 1.99m},
+                {"chocolate milk", 4.49m},
+                {"grapes", 2.79m},
+                {"apples", 2.59m},
+                {"bacon", 4.99m},
+                {"ground beef", 7.89m},
+                {"chicken", 9.34m }
+            };
 
 
             int largestKeyLen = 0;
@@ -38,7 +50,7 @@ namespace Lab3._2
 
             int itemSpace = largestKeyLen + 6;
             
-
+            
             static void ShowList(int itemSpace, Dictionary<string, decimal> items)
             {
                 int counter = 0;
@@ -94,9 +106,6 @@ namespace Lab3._2
                         {
                             Console.WriteLine("Sorry, we don't have those. Please try again.");
                         }
-                        
-                        
-                        
                     }
                     
                 }
@@ -109,7 +118,6 @@ namespace Lab3._2
             bool doneAdding = false;
             while (!doneAdding)
             {
-
                 string userInput = addItem(items);
 
                 Console.WriteLine($"\nYou selected {userInput} at the price of ${items[userInput]}.\n");
@@ -171,9 +179,9 @@ namespace Lab3._2
 
             for (int i = 0; i < itemList.Count; i++)
             {
-                string periods = new string('.', (itemSpace - itemList[i].Length));
-                
-                
+                string periods = new String('.', (itemSpace - itemList[i].Length));
+                //string periods = new String('.', 8);
+
                 Console.WriteLine($"{itemList[i]}{periods}${priceList[i]}{secondPeriods}{quantList[i]}");
             }
             
@@ -181,7 +189,21 @@ namespace Lab3._2
             // fix formatting for Quantity
 
             Console.WriteLine(bar);
-            decimal avg = Math.Round(priceList.Sum() / quantList.Sum(), 2);
+
+            
+            
+            decimal totalPrice = 0m;
+            for (int i = 0; i < priceList.Count; i++)
+            {
+                totalPrice += priceList[i] * quantList[i];
+            }
+
+            // This was not working right.
+            //decimal avg = Math.Round(priceList.Sum() / quantList.Sum(), 2);
+
+            decimal avg = Math.Round(totalPrice / quantList.Sum(), 2);
+
+
             string listAvg = $"Average{new String(' ', itemSpace - 7)}${avg}{new String(' ',secondPeriods.Length)}{quantList.Sum()}\n";
             Console.WriteLine(listAvg);
             Console.WriteLine();
