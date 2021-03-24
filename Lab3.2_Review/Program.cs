@@ -42,11 +42,21 @@ namespace Lab3._2_Review
 
             while (!done)
             {
+                Console.Write("What would you like to buy? ");
                 string item3 = Console.ReadLine();
+
+                if(menu.ContainsKey(item3) == false)
+                {
+                    // item not in menu
+                    Console.WriteLine("Sorry we don't have that.");
+                    // this will skip everything for the rest of the loop and start it over
+                       
+                    continue;
+                }
                 food.Add(item3);
                 decimal price3 = menu[item3];
                 prices.Add(price3);
-                Console.Write("Woudl you like to add more items? (y/n)");
+                Console.Write("Would you like to add more items? (y/n)");
                 string entry = Console.ReadLine();
                 if (entry == "n")
                 {
@@ -54,11 +64,17 @@ namespace Lab3._2_Review
                 }
             }
 
+            decimal totalprice = 0;
+
+
+
             // Print out the lists
             for (int i = 0; i < food.Count; i++)
             {
                 Console.WriteLine($"{food[i]}.......{prices[i]}");
+                totalprice += totalprice + prices[i];
             }
+            Console.WriteLine($"The average price is {totalprice / food.Count}");
         }
     }
 }
